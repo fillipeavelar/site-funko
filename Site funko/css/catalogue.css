@@ -1,0 +1,223 @@
+a, h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-size: x-large;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 35px;
+  padding: 10px 0;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* CSS Grid Pages */
+.bodyCatalogue {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "headerCatalogue"
+  "mainCatalogue"
+}
+
+.gridProductsCatalogue {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.catalogueProductContainer {
+  max-width: 420px;
+  padding: 20px;
+}
+
+
+.defaultButton {
+  background-image: linear-gradient(to bottom, #fe7467, #fc3836);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+header {
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  max-width: 500px;
+  justify-content: space-evenly;
+}
+
+
+nav a.currentPage {
+  border-bottom: 3px solid #fe7467;
+}
+
+.currentpageCatalogue::after {
+  display: block;
+  content: "";
+  width: 65px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fe7467;
+}
+
+header .ul {
+  list-style: none;
+}
+
+header .headerImgMarvel {
+  max-width: 490px;
+  height: auto;
+  position: relative;
+  top: 334px;
+  left: 167px;
+}
+
+h2.sectionCatalogueTitle::after {
+  display: block;
+  content: '';
+  width: 120px;
+  height: 5px;
+  margin: 15px auto;
+  background-color:  #fe7467;
+}
+
+img.sectionCatalogueImg {
+  width: 700px;
+  height: auto;
+}
+
+p.sectionCatalogueText {
+  font-size: 20px;
+}
+
+.sectionCatalogueButton {
+  border-radius: 15px;
+
+}
+header.headerCatalogue {
+  background-image: url(img/captainmarvelheader.jpg);
+}
+img.catalogueProductImg {
+  max-width: 250px;
+  height: auto;
+}
+
+nav a.currentPage {
+  border-bottom: 3px solid #fe7467;
+}
+
+.defaultButton {
+  background-image: linear-gradient(to bottom, #fe7467, #fc3836);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.catalogueProductButton {
+  border-radius: 30px;
+}
+
+header.headerCatalogue {
+  background-image: url("/img/captainmarvelheader.jpg");
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .defaultButton {
+    padding: 10px;
+    font-size: 15px;
+    }
+    
+  
+    nav {
+    display: flex;   
+    flex-flow: column wrap;
+    align-items: center;
+    }
+    
+  header {
+    padding: 20px 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+  }
+
+  header .headerImgMarvel {
+    display: none;
+    max-width: 180px;
+    height: auto;
+    position: relative;
+    top: 100px;
+    left: 0px;
+  
+  }
+  
+  
+  header ul {
+    padding: 0;
+  }
+
+  
+    
+  header.headerCatalogue {
+    background-image: url("/img/captainmarvelheader_Mobile.jpg");
+  }
+  
+  .catalogueProductContainer {
+    max-width: 380px;
+    padding: 10px 45px;
+  }
+  
+  img.catalogueProductImg {
+    max-width: 360px;
+  }
+}
